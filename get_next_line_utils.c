@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ntitan <marvin@42.fr>                      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/01/06 21:31:16 by ntitan            #+#    #+#             */
+/*   Updated: 2022/01/06 21:31:18 by ntitan           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
-int ft_strlen(char *c)
+int	ft_strlen(char *c)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (c[i])
-        i++;
-    return (i);
+	i = 0;
+	while (c[i])
+		i++;
+	return (i);
 }
 
 void	*ft_memcpy(void *dst, void *src, size_t n)
@@ -25,9 +37,9 @@ void	*ft_memcpy(void *dst, void *src, size_t n)
 	return (dst);
 }
 
-char    *ft_substr(char *s, int start, int len)
+char	*ft_substr(char *s, int start, int len)
 {
-	char	    *str;
+	char		*str;
 	long long	i;
 
 	i = 0;
